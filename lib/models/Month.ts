@@ -1,7 +1,10 @@
 import mongoose from "mongoose";
 
 const monthSchema = new mongoose.Schema({
-    month: { type: Date, default: Date.prototype.getMonth() },
+    month: {
+        type: Date, 
+        default: Date.prototype.getMonth()
+    },
     invoice: [
         {
             type: mongoose.Schema.Types.ObjectId,
